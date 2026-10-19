@@ -1,0 +1,8 @@
+{
+  "protocol": "HC-BTCVOL-001",
+  "release": "holdout-runner-v1.0.0",
+  "frozen_models": "models-inference-v1.0.0",
+  "status": "pre_holdout",
+  "runner_sha256": "70396164a0f90a612860bc58d1cf5100e2740c0a2b9d6bc1e8fb06b49082f001",
+  "first_holdout_not_yet_evaluated": true
+}
