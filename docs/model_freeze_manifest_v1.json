@@ -1,0 +1,23 @@
+{
+  "protocol": "HC-BTCVOL-001",
+  "release": "models-inference-v1.0.0",
+  "purpose": "Pre-holdout model and inference freeze",
+  "holdout_evaluated": false,
+  "locked_file_sha256": {
+    "configs/protocol_v1.json": "942fadf5e17b03627e58f2b0a5b14df7f920196b7fc3a2a430df02f76d055b22",
+    "configs/inference_v1.json": "ce5f0819ddd35330556afd57f1ba447f82bd7579eabaee07c7c9320154a39640",
+    "requirements.txt": "3d649c69eaa26d06976fe42b46c01d60010197d5cbdbdb3a325655d03746f3b8",
+    "requirements-lock.txt": "1c5436cce642f5de61a439a85a8cc9b062aa53a85a728f9b09d714b39b217406",
+    "src/hc_vol/baselines.py": "78cc7315419fa49bdd4ffc7ea2533a1aa06afd4d5764da2b52925294c213cf5b",
+    "src/hc_vol/garch_models.py": "e3e3223bca6640e4971e89c5508809356541ba87a8cc840495a878af680fa54f",
+    "src/hc_vol/har_models.py": "519337e1e522e130edfe66381b6f23acf825fe564d73c4de4d94aae630169e8a",
+    "src/hc_vol/inference.py": "f163a74132abe6218dc7a0b993df1fb2bae8657ed7a2f3e293bda9fb73b7b351",
+    "scripts/run_garch_validation.py": "97e4040f882200fc9541e1155456e4f37b2376d237145c4ec1798f4b3dc3df3a",
+    "scripts/audit_garch_validation.py": "0911a8a606dfa250a56a73dffb8435bae738fc60cba277e488573d6087033082",
+    "scripts/run_har_validation.py": "5dd39b2cacd0bd25fab5245efdf66e8acce5593e376552f3f3d80f18d52d6cbf",
+    "scripts/audit_har_validation.py": "9bd437a9a6e1f76861fd0f55241ecfc7eb8d6fd7d8900a6d589009904785f530",
+    "tests/test_baselines.py": "89da5d19fb6aea7d610ecfd6375c7480531f3c6bc725dadcd4a25538a9af1024",
+    "tests/test_har_models.py": "317456de951ab732858fb11b355a9ae81b826aa4f2d9d3ae62aef857cafc0230",
+    "tests/test_inference.py": "9b70165b5faa6af408c6f7ec32d9e8661cc52c21e87a12e0f989d8661759ba52"
+  }
+}

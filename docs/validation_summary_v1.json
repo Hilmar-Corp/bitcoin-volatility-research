@@ -1,0 +1,53 @@
+{
+  "protocol": "HC-BTCVOL-001",
+  "status": "validation_complete_before_holdout",
+  "period": "2023-01-01/2024-12-31",
+  "data_source_sha256": "cc45736e276418ae0ea47df3479a8378e7e39aab516299baa1e1227f6661ff84",
+  "model_scores": {
+    "D0_rolling_30": {
+      "n": 730,
+      "mean_qlike": -6.208568160497258
+    },
+    "D1_ewma_094": {
+      "n": 730,
+      "mean_qlike": -6.299880273041307
+    },
+    "I0_rolling_rv_30": {
+      "n": 700,
+      "mean_qlike": -6.26089980050126
+    },
+    "I1_ewma_rv_094": {
+      "n": 700,
+      "mean_qlike": -6.304821822088722
+    },
+    "ARCH": {
+      "n": 730,
+      "mean_qlike": -6.314225372316821
+    },
+    "GARCH": {
+      "n": 730,
+      "mean_qlike": -6.354886410075145
+    },
+    "HAR_RV": {
+      "n": 700,
+      "mean_qlike": -6.350354041506642
+    }
+  },
+  "garch_vs_ewma": {
+    "gain": 0.05500613703383772,
+    "hac_95_ci": [
+      -0.12105330872926642,
+      0.23106558279694187
+    ],
+    "exploratory_only": true
+  },
+  "har_vs_ewma_rv": {
+    "gain": 0.04553221941792029,
+    "hac_95_ci": [
+      -0.010326868094322282,
+      0.10139130693016285
+    ],
+    "exploratory_only": true
+  },
+  "holdout_evaluated": false
+}

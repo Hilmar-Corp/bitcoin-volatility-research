@@ -1,0 +1,49 @@
+{
+  "protocol": "HC-BTCVOL-001",
+  "version": "inference-v1.0",
+  "status": "frozen_before_final_holdout",
+  "holdout_start": "2025-01-01",
+  "holdout_end": "2026-09-30",
+  "holdout_calendar_days": 638,
+  "forecast_horizon_days": 1,
+  "target": "rv_5m",
+  "model_count": 7,
+  "models": [
+    "D0_rolling_30",
+    "D1_ewma_094",
+    "I0_rolling_rv_30",
+    "I1_ewma_rv_094",
+    "ARCH",
+    "GARCH",
+    "HAR_RV"
+  ],
+  "primary_contrasts": {
+    "GARCH_vs_EWMA": {
+      "benchmark": "D1_ewma_094",
+      "candidate": "GARCH"
+    },
+    "HAR_RV_vs_EWMA_RV": {
+      "benchmark": "I1_ewma_rv_094",
+      "candidate": "HAR_RV"
+    }
+  },
+  "loss": "log(forecast) + target/forecast",
+  "gain_definition": "loss_benchmark_minus_loss_candidate",
+  "test": "two_sided_normal_approximation_DM",
+  "hac_method": "Newey-West Bartlett",
+  "hac_lags": 7,
+  "familywise_method": "Holm step-down",
+  "familywise_alpha": 0.05,
+  "supplementary_bootstrap": {
+    "method": "moving_nonoverlapping_draws_of_overlapping_blocks",
+    "block_length_days": 14,
+    "replications": 10000,
+    "random_seed": 20261019,
+    "interval": "two_sided_95_percentile",
+    "confirmatory": false
+  },
+  "missing_forecast_policy": "Fail closed if any of the seven models does not yield a finite positive forecast on every one of the 638 holdout dates.",
+  "required_common_sample": 638,
+  "parameter_selection_from_holdout": false,
+  "holdout_evaluated": false
+}
