@@ -1,0 +1,24 @@
+{
+  "protocol_id": "HC-BTCVOL-001",
+  "version": "1.0.0",
+  "status": "preregistered_specification",
+  "asset": "BTCUSDT",
+  "venue": "Binance Spot",
+  "timeframe": "5m",
+  "timezone": "UTC",
+  "start": "2020-01-01",
+  "end_inclusive": "2026-09-30",
+  "development_end": "2022-12-31",
+  "validation_end": "2024-12-31",
+  "forecast_horizon_days": 1,
+  "target": "daily_sum_squared_5m_log_returns",
+  "primary_loss": "QLIKE",
+  "rolling_estimation_days": 730,
+  "ewma_lambda": 0.94,
+  "har_windows_days": [1, 7, 30],
+  "primary_comparisons": [
+    "GARCH_vs_EWMA",
+    "HAR_RV_vs_EWMA_RV"
+  ],
+  "familywise_alpha": 0.05
+}
