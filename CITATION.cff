@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use the software, methods, or published output artifacts, cite this repository and the specific immutable release tag."
+type: software
+title: "Bitcoin Volatility Research (HC-BTCVOL-001)"
+authors:
+  - name: "HilmarCorp"
+repository-code: "https://github.com/Hilmar-Corp/bitcoin-volatility-research"
+url: "https://github.com/Hilmar-Corp/bitcoin-volatility-research/tree/qmle-audit-v1.0.0"
+version: "qmle-audit-v1.0.0"
+date-released: "2026-10-20"
+license: "Apache-2.0"
+abstract: >-
+  Versioned reproducible research on daily Bitcoin volatility forecasting
+  from five-minute Binance BTCUSDT spot data, with preregistered first-look
+  evaluation and separately archived post-holdout numerical audits.
+keywords:
+  - bitcoin
+  - realized variance
+  - HAR-RV
+  - GARCH
+  - QLIKE
+  - reproducibility
