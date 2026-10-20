@@ -1,0 +1,97 @@
+{
+  "protocol": "HC-BTCVOL-001",
+  "stage": "final_holdout_first_look",
+  "n": 638,
+  "frozen_models_commit": "166bb357f6c15c46d7e9a81d95609ed8b8f522dd",
+  "data_source_sha256": "cc45736e276418ae0ea47df3479a8378e7e39aab516299baa1e1227f6661ff84",
+  "scores": {
+    "D0_rolling_30": {
+      "n": 638,
+      "mean_qlike": -6.493021900363634
+    },
+    "D1_ewma_094": {
+      "n": 638,
+      "mean_qlike": -6.553949057171199
+    },
+    "I0_rolling_rv_30": {
+      "n": 638,
+      "mean_qlike": -6.503038888146425
+    },
+    "I1_ewma_rv_094": {
+      "n": 638,
+      "mean_qlike": -6.55018690934632
+    },
+    "ARCH": {
+      "n": 638,
+      "mean_qlike": -6.539582015352403
+    },
+    "GARCH": {
+      "n": 638,
+      "mean_qlike": -6.592433291152203
+    },
+    "HAR_RV": {
+      "n": 638,
+      "mean_qlike": -6.638463133837772
+    }
+  },
+  "primary_contrasts": {
+    "GARCH_vs_EWMA": {
+      "benchmark": "D1_ewma_094",
+      "candidate": "GARCH",
+      "dm_hac": {
+        "n": 638,
+        "mean_gain": 0.03848423398100521,
+        "hac_lags": 7,
+        "hac_standard_error": 0.027431093791164863,
+        "z": 1.4029420144157865,
+        "p_value_two_sided": 0.1606341308632143
+      },
+      "bootstrap": {
+        "block_length": 14,
+        "replications": 10000,
+        "seed": 20261019,
+        "ci_percentile_95": [
+          -0.009238035478517682,
+          0.10013922349910497
+        ]
+      },
+      "holm": {
+        "p_holm": 0.1606341308632143,
+        "reject_at_0_05": false
+      },
+      "candidate_superior_confirmatory": false
+    },
+    "HAR_RV_vs_EWMA_RV": {
+      "benchmark": "I1_ewma_rv_094",
+      "candidate": "HAR_RV",
+      "dm_hac": {
+        "n": 638,
+        "mean_gain": 0.08827622449145156,
+        "hac_lags": 7,
+        "hac_standard_error": 0.02928027049243905,
+        "z": 3.0148705256751933,
+        "p_value_two_sided": 0.0025708897704688444
+      },
+      "bootstrap": {
+        "block_length": 14,
+        "replications": 10000,
+        "seed": 20261019,
+        "ci_percentile_95": [
+          0.04149297659951964,
+          0.15364045868855053
+        ]
+      },
+      "holm": {
+        "p_holm": 0.005141779540937689,
+        "reject_at_0_05": true
+      },
+      "candidate_superior_confirmatory": true
+    }
+  },
+  "holdout_evaluated": true,
+  "model_reoptimization": false,
+  "output_sha256": {
+    "final_predictions.parquet": "f67171a9f18b1dfd9706d03412c0bad57307f76c08237376445b70dcd187d342",
+    "final_parameter_trace.parquet": "b2452afcd28db1dcdd0f38bbc562ddd8956b6d3b6c3d7ce6125f7975709db50b"
+  }
+}

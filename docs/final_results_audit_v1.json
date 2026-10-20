@@ -1,0 +1,99 @@
+{
+  "protocol": "HC-BTCVOL-001",
+  "stage": "post_holdout_verified_results",
+  "holdout_start": "2025-01-01",
+  "holdout_end": "2026-09-30",
+  "common_sample": 638,
+  "frozen_models_commit": "166bb357f6c15c46d7e9a81d95609ed8b8f522dd",
+  "source_data_sha256": "cc45736e276418ae0ea47df3479a8378e7e39aab516299baa1e1227f6661ff84",
+  "original_final_report_sha256": "2d98f7ffd4cd5e87c3973d73ae201c30ce4665708899ada8c4511a3dcae1d7de",
+  "original_predictions_sha256": "f67171a9f18b1dfd9706d03412c0bad57307f76c08237376445b70dcd187d342",
+  "original_parameter_trace_sha256": "b2452afcd28db1dcdd0f38bbc562ddd8956b6d3b6c3d7ce6125f7975709db50b",
+  "models": {
+    "D0_rolling_30": -6.493021900363634,
+    "D1_ewma_094": -6.553949057171199,
+    "I0_rolling_rv_30": -6.503038888146425,
+    "I1_ewma_rv_094": -6.55018690934632,
+    "ARCH": -6.539582015352403,
+    "GARCH": -6.592433291152203,
+    "HAR_RV": -6.638463133837772
+  },
+  "primary_contrasts": {
+    "GARCH_vs_EWMA": {
+      "dm_hac": {
+        "n": 638,
+        "mean_gain": 0.03848423398100521,
+        "hac_lags": 7,
+        "hac_standard_error": 0.027431093791164863,
+        "z": 1.4029420144157865,
+        "p_value_two_sided": 0.1606341308632143
+      },
+      "bootstrap": {
+        "block_length": 14,
+        "replications": 10000,
+        "seed": 20261019,
+        "ci_percentile_95": [
+          -0.009238035478517682,
+          0.10013922349910497
+        ]
+      },
+      "holm": {
+        "p_holm": 0.1606341308632143,
+        "reject_at_0_05": false
+      }
+    },
+    "HAR_RV_vs_EWMA_RV": {
+      "dm_hac": {
+        "n": 638,
+        "mean_gain": 0.08827622449145156,
+        "hac_lags": 7,
+        "hac_standard_error": 0.02928027049243905,
+        "z": 3.0148705256751933,
+        "p_value_two_sided": 0.0025708897704688444
+      },
+      "bootstrap": {
+        "block_length": 14,
+        "replications": 10000,
+        "seed": 20261019,
+        "ci_percentile_95": [
+          0.04149297659951964,
+          0.15364045868855053
+        ]
+      },
+      "holm": {
+        "p_holm": 0.005141779540937689,
+        "reject_at_0_05": true
+      }
+    }
+  },
+  "descriptive_year_split": {
+    "2025": {
+      "n": 365,
+      "mean_qlike": {
+        "D0_rolling_30": -6.443033632633515,
+        "D1_ewma_094": -6.501950534315784,
+        "I0_rolling_rv_30": -6.46851295677022,
+        "I1_ewma_rv_094": -6.5168125930917435,
+        "ARCH": -6.505928750499791,
+        "GARCH": -6.547607743014635,
+        "HAR_RV": -6.605241126764314
+      }
+    },
+    "2026": {
+      "n": 273,
+      "mean_qlike": {
+        "D0_rolling_30": -6.559856031211594,
+        "D1_ewma_094": -6.623470891758109,
+        "I0_rolling_rv_30": -6.549199931927798,
+        "I1_ewma_rv_094": -6.594808247928445,
+        "ARCH": -6.584576307188315,
+        "GARCH": -6.652364884815988,
+        "HAR_RV": -6.682880835602649
+      }
+    }
+  },
+  "holdout_evaluated": true,
+  "model_reoptimization": false,
+  "bootstrap_role": "supplementary_only",
+  "post_holdout_audit": true
+}

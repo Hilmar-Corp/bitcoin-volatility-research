@@ -20,8 +20,8 @@ Period: 2020-01-01 to 2026-09-30 UTC.
 Primary loss: QLIKE.
 Evaluation: chronological walk-forward.
 
-Raw data and generated datasets are excluded
-from GitHub. No performance results are claimed.
+Raw data and full reconstructed datasets are excluded
+from GitHub. Final forecast artifacts are in `results/`.
 
 Code license: Apache License 2.0.
 
@@ -58,4 +58,4 @@ See:
 - `docs/data_manifest_v1_1.json`
 - `configs/source_quality_reference_v1.json`
 
-No forecasting performance is claimed.
+Final holdout results: `docs/research_findings_v1.md`.
