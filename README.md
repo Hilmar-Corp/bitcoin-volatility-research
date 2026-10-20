@@ -59,3 +59,24 @@ See:
 - `configs/source_quality_reference_v1.json`
 
 Final holdout results: `docs/research_findings_v1.md`.
+
+## Post-holdout scientific robustness review
+
+The independent numerical replay, exploratory
+robustness diagnostics, figures and academic discussion
+are archived separately from the first-look results.
+
+- `docs/postholdout_scientific_review_v1.md`
+- `docs/postholdout_diagnostics_v1.json`
+- `figures/`
+
+The preregistered results remain unchanged under
+`final-results-v1.0.0`.
+
+Alternative HAC lags, bootstrap blocks and outlier
+exclusions are post-holdout exploratory analyses.
+They do not constitute new confirmatory tests.
+
+This is an internally audited research artifact,
+not an external peer-reviewed publication or
+institutional model validation.
