@@ -1,0 +1,23 @@
+{
+  "protocol": "HC-BTCVOL-001",
+  "classification": "POST_HOLDOUT_NUMERICAL_AUDIT",
+  "original_forecasts_sha256": "f67171a9f18b1dfd9706d03412c0bad57307f76c08237376445b70dcd187d342",
+  "second_optimizer": "SLSQP",
+  "optimization_library": "SciPy 1.18.1",
+  "independent_initializations": 3,
+  "windows_per_model": 638,
+  "attempts_total": 1276,
+  "objective_gap_alert_threshold": 0.0001,
+  "forecast_relative_alert_threshold": 0.05,
+  "converged": 1276,
+  "review_required": 0,
+  "alerts": {
+    "ARCH": 0,
+    "GARCH": 0
+  },
+  "original_models_modified": false,
+  "confirmatory_inference_modified": false,
+  "external_peer_review": false,
+  "status": "PASS",
+  "refits_sha256": "e96508a4be3000113f3a10e1eee6d5cbf6ffc8580f58f1f3ed47dda004523dcf"
+}

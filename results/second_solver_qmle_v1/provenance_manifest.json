@@ -1,0 +1,15 @@
+{
+  "protocol": "HC-BTCVOL-001",
+  "release": "qmle-audit-v1.0.0",
+  "classification": "POST_HOLDOUT_NUMERICAL_AUDIT",
+  "original_release": "final-results-v1.0.0",
+  "second_optimizer": "SLSQP",
+  "total_refits": 1276,
+  "converged": 1276,
+  "alerts": 0,
+  "report_sha256": "a6b5c7614cb75da6ec387996b18f9185e8ac6395959324e0f76eb9c50db061ea",
+  "refits_sha256": "e96508a4be3000113f3a10e1eee6d5cbf6ffc8580f58f1f3ed47dda004523dcf",
+  "audit_script_sha256": "1f7b98ac03a7c66833f742a60ae4b7362f7b02bae2621ccf2e42481aa0b5d141",
+  "original_results_unchanged": true,
+  "external_peer_review": false
+}

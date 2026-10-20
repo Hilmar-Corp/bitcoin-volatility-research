@@ -80,3 +80,16 @@ They do not constitute new confirmatory tests.
 This is an internally audited research artifact,
 not an external peer-reviewed publication or
 institutional model validation.
+
+## Independent second-solver QMLE audit
+
+All 1,276 ARCH/GARCH holdout estimations were
+recomputed using an independently implemented
+SLSQP optimizer.
+
+Convergence: 1,276 / 1,276. Alerts: zero.
+
+See `docs/qmle_second_solver_review_v1.md`
+and `results/second_solver_qmle_v1/`.
+
+The original confirmatory results remain unchanged.
