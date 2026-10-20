@@ -93,3 +93,31 @@ See `docs/qmle_second_solver_review_v1.md`
 and `results/second_solver_qmle_v1/`.
 
 The original confirmatory results remain unchanged.
+
+
+## Reproducibility, citation and governance
+
+The first-look results, post-holdout analyses and numerical audit are
+**immutable historical releases**, verified with SHA-256 manifests.
+
+The repository is **private**; third parties need access to reproduce
+the released artifact-level results. Full data reconstruction also requires
+the separately obtained Binance source archives.
+
+Reproduce the available forecast results:
+
+    python3.12 -m venv .venv
+    source .venv/bin/activate
+    python -m pip install -r requirements-lock.txt
+    python scripts/verify_release_integrity.py
+    python -W error::DeprecationWarning -m pytest tests/ -q
+    python scripts/verify_public_results.py
+
+- [Reproducibility and limitations](REPRODUCIBILITY.md)
+- [Citation metadata](CITATION.cff)
+- [Contributor and change-control policy](CONTRIBUTING.md)
+- [Apache 2.0 license](LICENSE) and [copyright NOTICE](NOTICE)
+- [Automated reproducibility checks](.github/workflows/reproducibility.yml)
+
+CI checks released artifact bytes and numerical inference, **not** missing
+third-party market-data archives or external peer-reviewed validation.
